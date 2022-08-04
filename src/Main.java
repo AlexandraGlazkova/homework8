@@ -41,6 +41,21 @@ public class Main {
         return false;
     }
 
+    public static int deliveryTime(int deliveryDistance) {
+
+        if (deliveryDistance <= 20) {
+            System.out.println("Доставка осуществится в течении 1 суток");
+        }else if (deliveryDistance <= 60){
+            System.out.println("Доставка осуществится в течении 2 суток");
+        }else if (deliveryDistance<=100){
+            System.out.println("Доставка осуществится в течении 3 суток");
+        }else{
+            System.out.println("Доставка не осуществляется");
+        }
+        return deliveryDistance;
+    }
+
+
 //    Задание 1
 //    Реализуйте метод, который получает в качестве параметра год, а затем проверяет, является ли он високосным,
 //    и выводит результат в консоль. 
@@ -91,8 +106,13 @@ public class Main {
         int currentYear = LocalDate.now().getYear();
         versionInstallation(getClientOs("iOS"), 2015);
 
+//      Задание 3
+//      Возвращаемся к любимой многими задаче на расчет дней доставки банковской карты от банка.
+//      Наша задача — доработать код, а именно написать метод, который на вход принимает дистанцию
+//      и возвращает итоговое количество дней доставки.
+        System.out.println("Задание 3");
 
-
+        deliveryTime(45);
 
 
 
